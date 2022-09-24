@@ -1,0 +1,26 @@
+{
+	"name": "belajar-express",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node ./bin/www",
+		"dev": "DEBUG=belajar-express:* nodemon ./bin/www"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.4",
+		"debug": "~2.6.9",
+		"ejs": "^3.1.8",
+		"express": "~4.16.1",
+		"express-session": "^1.17.3",
+		"http-errors": "~1.6.3",
+		"jade": "~1.11.0",
+		"morgan": "~1.9.1",
+		"pg": "^8.8.0",
+		"pg-hstore": "^2.3.4",
+		"sequelize": "^6.23.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.19",
+		"sequelize-cli": "^6.4.1"
+	}
+}
