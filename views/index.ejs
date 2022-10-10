@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<script src="http://localhost:3000/javascripts/main.js" async></script>
-		<title>Home page Game</title>
-	</head>
-	<body>
-		<h1>Ini Adalah Homepage Traditional Game</h1>
-		<nav>
-			<ul>
-				<li><a href="/articles">Articles</a></li>
-			</ul>
-		</nav>
-	</body>
+    <script src="http://localhost:3000/javascripts/main.js" async></script>
+    <title>Home page Game</title>
+  </head>
+  <body>
+    <h1>Ini Adalah Homepage Traditional Game</h1>
+    <% if (user) {%> Hi <%= user.username %> <% } %>
+  </body>
 </html>

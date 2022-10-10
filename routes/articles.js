@@ -4,7 +4,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 const { articles } = require('../models');
 const { updateArticleById, insertArticle, deleteArticleById } = require('../controllers/articleController');
 
-router.use(authMiddleware);
+// router.use(authMiddleware);
 
 router.get('/', async (req, res) => {
 	const page = req.query.page || 1;
@@ -16,7 +16,8 @@ router.get('/', async (req, res) => {
 		limit,
 		order: [['updatedAt', 'DESC']],
 	});
-	res.render('articles/list', { results });
+	res.json(results);
+	// res.render('articles/list', { results });
 });
 
 router.get('/create', function (req, res, next) {
